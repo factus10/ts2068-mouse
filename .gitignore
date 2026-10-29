@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+
+# Third-party software used for testing; not redistributed here
+examples/*.tap
+
+# joytrace working files
+tools/joytrace/zes.log
+tools/joytrace/runs/
+tools/joytrace/progs/

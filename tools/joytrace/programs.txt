@@ -1,0 +1,14 @@
+colorplot|12|
+doodle|8|ENTER
+g_paint|12|
+multidraw|14|
+paintsinc|12|N ENTER w4
+laurie|8|ENTER w1 ENTER w2
+joystick|6|R ENTER w2
+quaddraw|6|R ENTER w2
+drawplot|6|R ENTER w3
+arcscratch|10|J w1
+g_zebrpain|10|ENTER w4
+g_pixfx|12|SPACE w4
+g_techdraw|10|1 w4
+draw512|14|
