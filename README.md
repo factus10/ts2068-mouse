@@ -26,5 +26,6 @@ Nothing has been built yet.
 
 ## Test software
 
-`examples/` is where the ZXDesk 2068 TAP files go for local testing. They are
-Jon Becker's software and aren't included in this repository.
+ZXDesk 2068 (source and TAPs, MIT licensed) lives in Jon Becker's
+[ts2068 repository](https://github.com/jon0x0/ts2068/tree/main/ZXDesk2068).
+For local testing, put the TAPs in `examples/`; they're gitignored here.

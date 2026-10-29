@@ -202,7 +202,15 @@ Spectrum joystick drawing programs work as well.
 
 ## ZXDesk 2068
 
-From disassembling `examples/zxdesk2068.tap` (code loads at 27648, entry 33280):
+Source: Jon Becker's [ts2068 repository](https://github.com/jon0x0/ts2068/tree/main/ZXDesk2068)
+(MIT). In `src/zxdesk.asm`, `MouseInit` has an `IFDEF TS2068` block that
+clears `MouseOn` and returns ("Native baseline uses keyboard and built-in
+joysticks"). The Spectrum detection code after it is unchanged. So the clean
+way to get mouse support is a build option that skips that early return
+(something to suggest to Jon), not a binary patch.
+
+From disassembling `examples/zxdesk2068.tap` (code loads at 27648, entry 33280),
+which matches the source:
 
 - The Kempston mouse detection (`$84AA`) and polling (`$8573`) code is all
   there. It reads `FBDF`/`FFDF`/`FADF`, reads each port twice, and limits each
